@@ -27,6 +27,11 @@ public class dataDriven {
 		FileInputStream fis = new FileInputStream("E:\\Information\\ExcelDriven.xlsx");
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
 		int no_of_sheets = workbook.getNumberOfSheets();
+		System.out.println(no_of_sheets); // print number of sheet
+		//print the name of sheet in excel
+		for (int i=0; i<no_of_sheets;i++) {
+			System.out.println(workbook.getSheetName(i));
+		}
 
 		for (int i = 0; i < no_of_sheets; i++) {
 
