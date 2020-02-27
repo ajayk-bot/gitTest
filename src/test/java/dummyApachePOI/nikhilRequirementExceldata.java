@@ -62,7 +62,7 @@ public class nikhilRequirementExceldata {
 	public static void main(String[] args) throws IOException {
 		nikhilRequirementExceldata data = new nikhilRequirementExceldata();
 		data.readingExceldata();
-		
+		System.out.println("testing");
 	
 
 		

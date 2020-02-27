@@ -14,9 +14,9 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 //System.out.println("Total Number of sheets in excel : " + workbook.getNumberOfSheets());
 //System.out.println(value.getStringCellValue());
 //System.out.println("Display Sheets Name in Excel File : "+ workbook.getSheetName(i));
-//identify the testCase coloumn in xls file reading each Row to find column name TestCases.
-//hasNext method to check whether the immediate naighbour(cell) is present or not..if not written false otherwise true.
-//get the firstrow now next to get each cell in the selecte row.
+//identify the testCase column in xls file reading each Row to find column name TestCases.
+//hasNext method to check whether the immediate neighbor(cell) is present or not..if not written false otherwise true.
+//get the firstrow now next to get each cell in the select row.
 
 public class dataDriven {
 
@@ -27,8 +27,8 @@ public class dataDriven {
 		FileInputStream fis = new FileInputStream("E:\\Information\\ExcelDriven.xlsx");
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
 		int no_of_sheets = workbook.getNumberOfSheets();
-		System.out.println(no_of_sheets); // print number of sheet
-		//print the name of sheet in excel
+		System.out.println("Number of sheet present : " + no_of_sheets); // print number of sheet
+		System.out.println("print the name of sheet in excel:");
 		for (int i=0; i<no_of_sheets;i++) {
 			System.out.println(workbook.getSheetName(i));
 		}
